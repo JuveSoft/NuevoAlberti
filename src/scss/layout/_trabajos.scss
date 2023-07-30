@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.zona-trabajos {
+    margin-top: 3rem;
+    max-width: 80%;
+
+    @include m.desktop {
+        .grid-container {
+            @include m.grid(3, 2rem);
+        }
+    }
+
+    display: block;
+    margin: auto;
+
+    .icono {
+        img {
+            display: block;
+            margin: 3rem auto;
+            width: auto;
+        }
+    }
+
+    .texto {
+        display: block;
+        //text-align: center;
+        padding: 0 2rem;
+        margin: 0;
+        text-align: justify;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+    }
+
+    margin-bottom: 3rem;
+
+    .icono:hover {
+        box-shadow: 0px 8px 16px 8px rgba(255, 255, 255, .5);
+        background-color: rgba(65, 60, 155, .3);
+        transition: .5s;
+
+        p {
+            color: rgb(218, 224, 228);
+        }
+    }
+}

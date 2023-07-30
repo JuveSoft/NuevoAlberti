@@ -1,0 +1,69 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-productos {
+    display: block;
+    width: 80%;
+    max-width: 140rem;
+    //background-color: green;
+    justify-content: center;
+    padding: 2rem;
+
+    p {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 2rem 0;
+
+    }
+
+    .precio-producto {
+        p {
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+            //letter-spacing: .5rem;
+        }
+    }
+
+    .producto {
+        min-width: 22rem;
+        max-width: 100%;
+        max-width: 35rem;
+        height: 100%;
+        background-color: rgb(245, 246, 248);
+        margin: auto;
+    }
+
+    .marca-producto {
+        width: 100%;
+    }
+
+    .foto-producto {
+        display: block;
+
+        img {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    ;
+
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    ;
+}

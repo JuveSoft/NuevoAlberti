@@ -1,0 +1,68 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.loguearse {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    //align-items: center;
+    width: 100%;
+    background-color: v.$blanco;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+
+    .login {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        margin: 0 4rem;
+    }
+
+    a {
+        position: relative;
+        font-weight: 700;
+        color: v.$azul;
+        font-size: 1.8rem;
+        margin: 0 4rem;
+
+        &:hover {
+            color: v.$negro;
+            font-size: 1.7rem;
+        }
+    }
+}
+.texto{
+    width: 80%;
+    max-width: 120rem;
+    display: block;
+    text-align: center;    
+    margin: 2rem auto 2rem auto;
+    padding: 2rem;
+    h3{
+        font-size: 4rem;
+        color: v.$blanco;
+    }
+    p{
+    text-align: left;
+        font-size: 2rem;
+        color: v.$blanco;
+        font-weight: 500;
+        
+    }
+}
+
+.ubicacion {
+    //position: relative;
+    img {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 50rem;
+        height: auto;                
+        margin: 5rem auto 5rem auto;
+        padding: 2rem;
+    }
+
+  
+}

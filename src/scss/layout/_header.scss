@@ -1,0 +1,317 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    //display: block;
+    h1 {
+        //color: v.$negro;
+        margin: 2rem 0;
+        padding: 0;
+
+        //font-size: 5rem;
+        @include m.desktop {
+            padding: 0;
+        }
+    }
+
+    .contenido-header {
+        max-width: 80%;
+        margin-bottom: 5rem;
+       //display: block;
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+
+        @include m.desktop {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+    }
+
+    //************* * * * * ** * * * * * * 
+    nav {
+        
+        //background-color: #528fd5;
+        //position: relative;
+        //display: block;
+        // margin-top: 30px;
+        //align-items: center;
+        /*esto nos permite agregarle al menú una posición relativa, esto no sirve para darle a los elementpos una posicion absoluta*/
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        display: flex; // nuevo
+        //display: block;
+        justify-content: center;
+       // align-items: center;
+    }
+
+    /* > esto involucra a los elementos directos */
+    nav>ul>li {
+        float: left;
+
+    }
+
+    nav ul li a {
+        //position: absolute;
+        //position: relative;
+        text-decoration: none;
+        color: #ffffff;
+        //display: block;
+        padding: 0 1rem; //***
+    }
+
+    nav ul li:hover {
+        background-color: rgb(137, 186, 241);
+
+        //z-index: 4;
+    }
+    .header-servicios{    
+    position: absolute;
+    //display:block;
+    text-align: center;
+    margin: 0;
+    }
+
+    nav>ul>li:hover div {
+        display: table;                
+        max-width: 100%;
+        margin-top: 0;//*****       
+        z-index: 3; 
+    }
+    /* Submenú */
+
+    nav ul li div {
+        width: 100%;
+        max-width: 50rem;
+        position: absolute;
+        left: 0;
+        background-color: #ccc;
+        box-sizing: border-box;
+        display: none;        
+    }
+
+    nav ul li div ul {
+        width: 15%;
+        display: table-cell;
+        border-right: 1.5px solid rgba(255, 255, 255, .6);
+        
+        box-sizing: border-box;        
+    }
+
+    nav ul li div ul:last-child {        
+        border: none;
+    }
+
+    nav ul li div ul .titulo {
+        background-color: #011c68;
+        color: #ffffff;
+        margin-top: 0.2rem;
+    }
+
+    nav ul li div ul .titulo a {
+        
+        color: #ffffff;
+        padding: 0.2rem 0.2rem;
+        
+    }
+    .titulo{
+        
+    }
+    .titulo .azul {
+        background-color: #3498db;
+    }
+
+    .titulo .verde {
+        background-color: #27ae60;
+    }
+
+    .titulo .naranja {
+        background-color: #e67e22;
+    }
+
+    .titulo .rojo {
+        background-color: #c0392b;
+
+    }
+
+    nav ul li div ul {
+        background: none;
+    }
+
+    nav ul li div ul a:hover {
+        //display: block;
+        //display: inline-block;
+        color: black;       
+        font-size: 1.5rem;
+        
+        z-index: 4;
+    }
+
+    nav ul li div ul li.titulo a:hover {
+        background: none;
+        color: white;
+    }
+
+    nav ul li div ul li a {
+        color: blue;
+    }
+
+    .header-servicios ul li {
+        position: relative;
+        padding: .1rem;
+        z-index: 4;
+    }
+
+    .header-producto ul li {
+        position: relative;
+        padding: .3rem;
+        z-index: 4;
+    }
+
+    /* Acerca de ...*/
+    .acerca ul li {
+        position: relative;    
+        padding: .3rem;
+        text-align: center;   
+        
+        z-index: 4;
+    }
+
+    /* contacto */
+    .contacto ul li {
+        position: relative;
+        padding: .3rem;
+        text-align: center;   
+         
+        z-index: 4;
+    }
+
+    //** * * * * * * * * * * * * * * * * * * 
+    a {
+                     display: block;
+                     
+                     margin: 1rem 0;
+                     color: v.$blanco;
+                     font-size: 1.2rem;
+                     &:hover {
+                         color: rgb(167, 207, 21);
+                     }
+                    }
+
+    //     .navegacion-principal ul {
+    //         padding: 0;
+    //         margin: auto 0;
+    //         //padding-bottom: 2rem;
+    //         letter-spacing: .1rem;
+    //         list-style-type: none;
+    //         @include m.tablet {
+    //             display: flex;
+    //             justify-content: space-around;
+    //         }
+    //         a {
+    //             display: block;
+    //             margin: 1rem 0;
+    //             color: v.$blanco;
+    //             font-size: 1.6rem;
+    //             &:hover {
+    //                 color: rgb(167, 207, 21);
+    //             }
+    //         }
+    //     }
+
+    //     li {
+    //         display: block;
+
+    //         @include m.tablet {
+    //             display: flex;
+    //             justify-content: center;
+    //             padding-bottom: 0;
+    //         }
+    //         //float: left;
+
+    //         @include m.desktop {
+    //             position: relative;
+    //             margin: 2rem 0 0 1.2rem;
+    //             display: flex;
+    //         }
+    //     }
+
+    //     li a,
+    //     .dropbtn {
+    //         //display: inline-block;
+    //         //display: block;
+
+    //         color: rgb(238, 233, 233);
+    //         text-align: center;
+    //         //padding: .2rem 0.6rem;
+    //         text-decoration: none;
+    //         transition: .3s;
+    //     }
+
+    //     //li a:hover, .dropdown:hover .dropbtn {
+    //     //background-color: red;
+    //     //}        
+    //    // li.dropdown {
+    //         //display: block;
+    //         //position: relative;
+    //     //}
+
+    //     .dropdown-content {
+    //         display: none;
+    //         //position: absolute;
+    //         background-color: rgba(57, 54, 235, 0.4);
+    //         min-width: 5rem;
+    //         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    //         //margin: auto;
+    //         padding: 0 2rem;
+    //         margin-top: 3rem;
+    //         z-index: 1;
+    //         transition: .5s;
+    //     }
+
+    //     .dropdown-content a {
+    //         position: relative;
+    //         display: block;
+    //         color: rgb(233, 11, 11);
+    //         padding: 0.2rem 0.2rem;
+    //         text-decoration: none;
+    //         transition: 0.8s;
+    //     }
+
+    //     .dropdown-content a:hover {
+    //         // background-color: #7442fd;
+    //         //  position: absolute;
+    //         position: relative;
+    //         display: block;
+    //         //display: flex;      
+    //     }
+
+    //     .dropdown:hover .dropdown-content {
+    //         //display: block;
+    //         position: absolute;
+    //         display: block;
+    //         text-align: center;
+    //         margin: -3.5rem 0 0 -20rem;
+
+    //         @include m.telefono {
+    //             margin: -3.5rem 0 5rem 20rem
+    //         }
+
+    //         margin-left:auto;
+    //         margin-right: auto;
+    //         z-index: 3;
+
+    //     }
+}

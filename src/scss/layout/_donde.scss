@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.titulo {
+    text-align: center;
+    color: rgb(186, 245, 186);
+    margin: 2rem 0 0 0;
+}
+
+
+.mapa {
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
