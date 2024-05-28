@@ -32,37 +32,47 @@
         }
     }
 }
-.texto{
+
+.texto {
     width: 80%;
     max-width: 120rem;
     display: block;
-    text-align: center;    
+    text-align: center;
     margin: 2rem auto 2rem auto;
     padding: 2rem;
-    h3{
+
+    h3 {
         font-size: 4rem;
         color: v.$blanco;
+        text-align: center;
+        align-items: center;
     }
-    p{
-    text-align: left;
+
+    p {
+        text-align: justify;
         font-size: 2rem;
         color: v.$blanco;
         font-weight: 500;
-        
+
     }
 }
 
 .ubicacion {
-    //position: relative;
-    img {
-        position: relative;
-        display: block;
-        width: 100%;
-        max-width: 50rem;
-        height: auto;                
-        margin: 5rem auto 5rem auto;
-        padding: 2rem;
+    h3{
+        font-size: 3rem;
+        color: v.$verde;
+        text-align: center;
+        align-items: center;
     }
-
-  
+    .mapa {
+        #map-9cd199b9cc5410cd3b1ad21cab2e54d3{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;            
+            width: 100%;   
+            max-width: 80rem;
+        }
+    }
 }
+

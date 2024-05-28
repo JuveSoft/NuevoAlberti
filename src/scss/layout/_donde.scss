@@ -7,12 +7,44 @@
     margin: 2rem 0 0 0;
 }
 
+.principal {
+    .centrar {
+        justify-content: center;
+        margin: 8rem auto;
 
-.mapa {
-    img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-        height: auto;
+        @include m.desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            height: 60vh;
+            align-items: center;
+        }
+
+        .donde-datos {            
+            position: relative;
+            display: grid;
+            place-items: center;
+            margin-bottom: 4rem;    
+            p{
+                font-size: 2.5rem;     
+                color: aqua;   
+            }
+            
+        }
+
+        .mapa {
+            position: relative;
+            display: flex;
+            justify-content: center;            
+            width: 50rem;
+            width: 100%;
+            height: auto;
+            img {
+             
+                background-size: contain;
+                //width: 500rem;           
+                //height: auto;
+            }
+        }
     }
 }

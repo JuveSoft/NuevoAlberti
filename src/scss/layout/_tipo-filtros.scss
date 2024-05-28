@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tipo-filtros {
+
+
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        height: 80vh;
+        align-items: center;
+    }
+
+    .icono {
+
+        width: 100%;
+        height: auto;
+        margin: 4rem auto;
+        padding: 2rem;
+    }
+
+}

@@ -2,12 +2,12 @@
 @use 'base/mixins' as m;
 
 .footer {
-    position: absolute;
+    position: relative;
     background-color: rgb(34, 35, 70);
     width: 100%;
-    margin-bottom: 0;
-    margin-left: 0;
-    
+    bottom: 0;
+    margin-left: 0;   
+    margin-top: 10rem; 
 
     p {
         color: v.$blanco;

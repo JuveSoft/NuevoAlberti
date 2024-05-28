@@ -9,26 +9,31 @@
 .contenedor-principal-filtros {
     .contenedor-texto {
         display: block;
-        max-width: 80%;
+        max-width: 70%;
         max-height: 100%;
-        margin: auto;       
-       
-        h3,
-        p {
-            color: burlywood;            
-        }
+        margin: auto;
 
         h3 {
-            margin-top: 3rem;
+            color: rgb(213, 219, 219);
+            margin-top: 6rem;
+            margin-bottom: 0;
+            font-size: 3rem;
+
+            span {
+                color: v.$blanco;
+            }
+
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: v.$blanco;
             line-height: 2rem;
             margin: 1rem 0;
+
             span {
                 font-size: 1.8rem;
+                font-weight: 700;
             }
         }
     }
@@ -36,30 +41,40 @@
     .titulo-foto-filtro {
         p {
             text-align: center;
-            margin-top: 4rem;
+            margin-top: 5rem;
         }
     }
 
-    .imagen-principal-filtros {       
+    .imagen-principal-filtros {
         img {
             width: 100%;
             opacity: 0.1;
+            // max-height: 100rem;
         }
+
         position: relative;
         margin-top: 4rem;
+
     }
 
     .foto-con-texto {
         margin-top: 3rem;
+
         .foto-filtro {
+            display: flex;
+            width: 100%;
+            // max-width: 20rem;
+            height: auto;
+            margin: auto;
+
             img {
-                display: block;
-                width: 100%;
-                max-width: 40rem;
-                height: auto;
+                max-width: 30rem;
+
                 margin: auto;
             }
+
         }
+
         @include m.tablet {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

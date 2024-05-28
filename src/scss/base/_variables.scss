@@ -3,7 +3,6 @@ $fuente_principal:'Bruno Ace SC', cursive, 'Roboto', sans-serif, 'Geologica';
 $fuente_secundaria:'Prompt', sans-serif;
 
 
-
 // Colores
 $verde:#4CB8B3;
 $rosa:#F53756;
@@ -12,11 +11,14 @@ $morado:#752F97;
 $negro:#000;
 $blanco:#FFF;
 $azul:blue;
+$color_shell:orange;
 
 
 // media query
 $telefono:480px;
 $tablet:768px;
 $desktop:992px;
-$desktopXL:1220px
+$desktopXL:1220px;
+
+$fondoAzul: linear-gradient(201deg, #16015a 0%, #4970f0 80%);
 
