@@ -43,7 +43,7 @@
 fieldset {
     position: relative;
     width: 100%;
-    max-width:40rem;
+    max-width:60rem;
     background-color: rgba(233, 226, 226, 0.4);
     //display: block;
     margin-left: auto;
@@ -62,8 +62,9 @@ fieldset {
 
 tr {
     width: 100%;
-    max-width: 50rem;
+    max-width: 70rem;
     display: block;
+    margin-top: .5rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -98,15 +99,21 @@ td {
     input {
         display: flex;
         //display: block;
-        padding: .5rem;
+        padding: .7rem;
         border-radius: .1rem;
         border: none;
         width: 100%;
-        max-width: 80rem;
+        max-width: 90rem;
         text-transform: uppercase;
         margin: .3rem 1rem;
         align-items: center;
         //padding-right: 11rem;
+       
+    }
+    input::placeholder{
+        font-size: 1.2rem;
+        color: v.$azul;
+        opacity: .3;
     }
 
     .select-combustible{
